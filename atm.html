@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>ATM (JS)</title>
+  <link rel="stylesheet" href="./atm.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="main">
+      <div class="header">
+        <h1>ATM</h1>
+        <div class="welcome">
+          <span>Welcome</span>
+          <span>Recruiter</span>
+        </div>
+      </div>
+      <div class="atm">
+        <div class="account">
+          <div class="item">
+            <span>Balance</span>
+            <span>
+              <span class="symbol">$</span> <span class="value"> &infin;</span>
+            </span>
+          </div>
+          <div class="item">
+            <span>Available banknotes</span>
+            <span>
+              <span class="bill">$ 100.00</span>
+              <span class="bill">$ 50.00</span>
+              <span class="bill">$ 20.00</span>
+              <span class="bill">$ 10.00</span>
+            </span>
+          </div>
+          <div id="bills-displayer" class="withdraw">
+          </div>
+        </div>
+        <div class="action">
+          <input id="displayer" type="text" class="input" value="" readonly />
+          <div class="keyboard">
+            <div class="line">
+              <div class="btn-value" id="n1">1</div>
+              <div class="btn-value" id="n2">2</div>
+              <div class="btn-value" id="n3">3</div>
+            </div>
+            <div class="line">
+              <div class="btn-value" id="n4">4</div>
+              <div class="btn-value" id="n5">5</div>
+              <div class="btn-value" id="n6">6</div>
+            </div>
+            <div class="line">
+              <div class="btn-value" id="n7">7</div>
+              <div class="btn-value" id="n8">8</div>
+              <div class="btn-value" id="n9">9</div>
+            </div>
+            <div class="line">
+              <div class="btn-value" id="clear" class="action gray">Clear</div>
+              <div class="btn-value" id="n0">0</div>
+              <div class="btn-value" id="confirm" class="action pink">Confirm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fast-withdraw"></div>
+    </div>
+  </div>
+  <script src="./atm.js"></script>
+</body>
+
+</html>
